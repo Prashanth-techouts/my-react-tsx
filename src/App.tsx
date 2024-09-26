@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Greet from "./components/Greet";
+import Welcome from "./components/Welcome";
+import LifeCycleA from "./components/LifeCycleA";
+import UseStateForm from "./components/UseStateForm";
+import UseStateArrayObj from "./components/UseStateArrayObj";
+import StopWatch from "./components/StopWatch";
+import ToggleButton from "./components/ToggleButton";
+import DataFetch from "./components/DataFetch";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  {
+    return (
+      <div className="App">
+        {/* <Greet name='gateway'><p>this is Gateway Site</p></Greet>
+      <Greet name='Taj'><p>this is Taj Site</p></Greet>
+      <Greet name='Vivanta'><p>this is Vivanta Site</p></Greet>
+      <Welcome name='gateway'/>
+      <Welcome name='Taj'/>
+      <Welcome name='Vivanta'/> */}
+        {/* <LifeCycleA/>
+      <UseStateForm/>
+     <UseStateArrayObj/> */}
+        {/* <StopWatch/> */}
+        <DataFetch />
+      </div>
+    );
+  }
 }
 
 export default App;
