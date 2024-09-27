@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import UserContextEx from "./UserContextEx";
+
+export const UserContext = React.createContext("con");
 
 function DataFetch() {
   const [post, setPost] = useState<any>({});
@@ -47,6 +50,11 @@ function DataFetch() {
           ))}
         </ul>
       }
+      <div>
+        <UserContext.Provider value="techouts">
+          <UserContextEx />
+        </UserContext.Provider>
+      </div>
     </div>
   );
 }

@@ -9,6 +9,10 @@ import StopWatch from "./components/StopWatch";
 import ToggleButton from "./components/ToggleButton";
 import DataFetch from "./components/DataFetch";
 
+import UserReducerEX from "./components/UserReducerEX";
+
+import UserReducerObjEX from "./components/UserReducerObjEX";
+
 function App() {
   {
     return (
@@ -24,6 +28,8 @@ function App() {
      <UseStateArrayObj/> */}
         {/* <StopWatch/> */}
         <DataFetch />
+        <UserReducerEX />
+        <UserReducerObjEX />
       </div>
     );
   }
